@@ -3,10 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HeroComponent } from './Components/hero/hero.component';
+import { TrackSnippetsComponent } from './Components/track-snippets/track-snippets.component';
+import { AccessClipboardComponent } from './Components/access-clipboard/access-clipboard.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeroComponent,
+    TrackSnippetsComponent,
+    AccessClipboardComponent
   ],
   imports: [
     BrowserModule,
