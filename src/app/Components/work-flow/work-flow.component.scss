@@ -1,0 +1,64 @@
+@import "../../../styles.scss";
+.workflow-container {
+  text-align: center;
+  .workflow-address{
+    @include font($fontWeight: 600, $fontSize: 25px);
+    color: $Dark-Grayish-Blue;
+  }
+  .workflow-text{
+    color: $Grayish-Blue;
+    @include font($fontWeight: 400, $fontSize: 14px);
+  }
+  .text-type {
+    display: flex;
+    justify-content:center;
+    gap:70px;
+    margin-top: 20px;
+    .type-one {
+      .blacklist {
+        @include font($fontWeight: 600, $fontSize: 18px);
+        color: $Dark-Grayish-Blue;
+        margin-bottom: -6px;
+      }
+
+    }
+    .type-two {
+      .plaintext {
+        @include font($fontWeight: 600, $fontSize: 18px);
+        color: $Dark-Grayish-Blue;
+        margin-bottom: -6px;
+      }
+   
+    }
+
+    .type-three {
+      .preview {
+        @include font($fontWeight: 600, $fontSize: 18px);
+        color: $Dark-Grayish-Blue;
+        margin-bottom: -6px;
+      }
+    }
+    .description{
+      color: $Grayish-Blue;
+      @include font($fontWeight: 400, $fontSize: 14px);
+    }
+
+  }
+  .links{
+    display: flex;
+    justify-content:center;
+    gap:70px;
+    margin-block: 150px;
+  }
+}
+@media only screen and (max-width: 500px){
+  .workflow-container{
+    margin-inline: 31px;
+    .text-type{
+      flex-wrap: wrap;
+    }
+    .links{
+      flex-wrap: wrap;
+    }
+  }
+}

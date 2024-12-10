@@ -1,19 +1,24 @@
 @import "../../../styles.scss";
 
-.container
+.hero-container
 {
   text-align: center;
-  .header{
-   img{
+  margin:0;
+  background-image: url('/assets/images/bg-header-desktop.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+   .logo{
     margin-top: 120px;
    }
-  }
-   h1{
+
+   .hero-address{
     @include font($fontWeight:600,$fontSize:40px);
     color:$Dark-Grayish-Blue;
 
    }
-   P{
+   .hero-text{
     margin-top: -11px;
     color:$Grayish-Blue;
     @include font($fontWeight:400,$fontSize:18px)
@@ -22,7 +27,7 @@
     display: flex;
     justify-content: center;
     gap:15px;
-     margin-top: 50px;
+    margin-top: 50px;
 
      button{
       padding:16px 35px;
@@ -30,22 +35,32 @@
       border: none;
       @include font($fontWeight:500,$fontSize:18px);
       color: white;
-      box-shadow: 0px 3px 2px #0000008a
+
 
      }
     .btn-ios{
-       background-color:$Strong-Cyan;
+       background-color:rgba($color: $Strong-Cyan, $alpha: 0.68)  ;
+       box-shadow: -1px 3px 2px $Strong-Cyan;
     }
     .btn-mac{
-      background-color: $Light-Blue;
+      background-color:rgba($color:$Light-Blue,$alpha:0.68);
+      box-shadow: -1px 3px 2px $Light-Blue;
+
     }
 
    }
 }
+.btn-ios:hover{
+  cursor: pointer;
+  //background-color: $Strong-Cyan ;
+
+}
 @media only screen and (max-width: 500px){
-  .container{
-    width: 100%;
-    padding-inline: 20px;
+  .hero-container{
+    width:fit-content;
+    padding-inline: 31px;
+    background-image:url('/assets/images/bg-header-mobile.png');
+
   }
   .btn-download{
     flex-wrap: wrap;

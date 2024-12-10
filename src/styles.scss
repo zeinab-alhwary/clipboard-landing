@@ -12,17 +12,12 @@ $Grayish-Blue: hsl(201, 11%, 66%);
 
 body{
   margin:0;
-  background-image: url(./assets/images/bg-header-desktop.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-
 }
-@media only screen and (max-width: 500px){
-  body{
-    background-image:url(./assets/images/bg-header-mobile.png);
+// @media only screen and (max-width: 500px){
+//   body{
 
-   
 
-  }
 
-}
+//   }
+
+// }

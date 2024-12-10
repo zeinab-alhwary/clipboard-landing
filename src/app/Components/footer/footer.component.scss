@@ -1,0 +1,65 @@
+@import '../../../styles.scss';
+.footer-container
+{
+ display: flex;
+ background-color: rgba($color:$Grayish-Blue , $alpha: 0.14);
+ padding: 20px;
+
+
+
+ .logo{
+  width: 45px;
+  height: 45px;
+  margin-inline:150px 100px;
+  margin-top: 25px;
+}
+.link-one,
+.link-two,
+.link-three
+{
+  margin-inline: 30px;
+  @include font($fontWeight:400,$fontSize:15px);
+  color:rgba($color: $Dark-Grayish-Blue, $alpha: 1.0)
+}
+.app-icons{
+  margin-left: 300px;
+  margin-top: 40px;
+  display: flex;
+}
+.facebook-icon,
+.twitter-icon,
+.instagram-icon{
+  width: 20px;
+  height: 20px;
+  margin-inline: 13px;
+}
+.app-icons img:hover{
+  filter: brightness(0) saturate(100%) invert(67%) sepia(11%) saturate(5829%) hue-rotate(123deg) brightness(95%) contrast(70%);
+}
+ .link-one p:hover,
+.link-two p:hover,
+.link-three p:hover{
+cursor: pointer;
+color: $Strong-Cyan;
+}
+
+}
+@media only screen and (max-width: 500px){
+  .footer-container{
+    display: flex;
+    flex-direction: column;
+    padding-inline: 31px;
+     text-align: center;
+
+
+  .logo{
+
+    margin-inline:0;
+  }
+  .app-icons{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+}
+}

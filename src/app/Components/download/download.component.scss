@@ -1,0 +1,52 @@
+@import '../../../styles.scss';
+
+.download-container{
+  text-align: center;
+  margin-bottom: 200px;
+.download-address{
+  @include font($fontWeight:600,$fontSize:25px);
+  color:$Dark-Grayish-Blue;
+}
+.download-text{
+  margin-top: -9px;
+  color:$Grayish-Blue;
+  @include font($fontWeight:400,$fontSize:18px)
+}
+.App-btn{
+  display: flex;
+  justify-content: center;
+  gap:15px;
+  margin-top: 50px;
+
+   button{
+    padding:16px 35px;
+    border-radius: 30px;
+    border: none;
+    @include font($fontWeight:500,$fontSize:18px);
+    color: white;
+   }
+   .btn-for-ios{
+    background-color:rgba($color: $Strong-Cyan, $alpha: 0.68)  ;
+    box-shadow: -1px 3px 2px $Strong-Cyan;
+ }
+ .btn-for-mac{
+   background-color:rgba($color:$Light-Blue,$alpha:0.68);
+   box-shadow: -1px 3px 2px $Light-Blue;
+
+ }
+  }
+
+}
+@media only screen and (max-width: 500px){
+  .download-container{
+    //width:fit-content;
+    margin-inline: 31px;
+  }
+  .App-btn{
+    flex-wrap: wrap;
+
+  }
+  button{
+    width: 100%;
+  }
+}
